@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "관공서 홈페이지 리뉴얼",
+    "description": "React + TypeScript + Styled-components 기반으로 구축",
+    "tags": ["React", "TypeScript", "공공 프로젝트"],
+    "image": "/images/project1.jpg",
+    "url": "https://gov-site.example.com"
+  },
+  {
+    "id": 2,
+    "title": "행정 포털 UX 리디자인",
+    "description": "디자인 시스템과 접근성 고려",
+    "tags": ["UX", "디자인 시스템", "접근성"],
+    "image": "/images/project2.jpg",
+    "url": "https://admin-ux.example.com"
+  }
+]
