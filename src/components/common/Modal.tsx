@@ -37,7 +37,7 @@ const Overlay = styled.div`
 `;
 
 const Content = styled.div`
-  background: ${({ theme }) => theme.colors.bg};
+  background: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.text};
   padding: 32px;
   border-radius: 16px;

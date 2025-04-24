@@ -2,7 +2,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  /* CSS Reset (simplified) */
   *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -15,9 +14,7 @@ const GlobalStyle = createGlobalStyle`
       Arial, 'Noto Sans KR', sans-serif;
     background-color: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
 
   a {
@@ -39,6 +36,13 @@ const GlobalStyle = createGlobalStyle`
   img {
     max-width: 100%;
     display: block;
+  }
+
+  /* 반응형 예시 */
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    html {
+      font-size: 14px;
+    }
   }
 `;
 
