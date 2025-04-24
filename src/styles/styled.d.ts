@@ -1,22 +1,7 @@
 // src/styles/styled.d.ts
 import 'styled-components';
+import { ThemeType } from './theme';
 
 declare module 'styled-components' {
-  export interface DefaultTheme {
-    colors: {
-      primary: string;
-      secondary: string;
-      bg: string;
-      text: string;
-      gray: string;
-      white: string;
-      card:string;
-      
-    };
-    fonts: {
-      base: string;
-      code: string;
-    };
-    spacing: (factor: number) => string;
-  }
+  export interface DefaultTheme extends ThemeType {}
 }

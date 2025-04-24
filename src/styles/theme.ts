@@ -1,4 +1,4 @@
-const theme = {
+export const theme = {
     colors: {
       primary: '#2F80ED',
       secondary: '#F2C94C',
@@ -7,6 +7,7 @@ const theme = {
       gray: '#888888',
       white: '#ffffff',
       card: '#ffffff',
+      background: '#333333',
     },
     fonts: {
       base: 'Pretendard, sans-serif',
@@ -15,5 +16,5 @@ const theme = {
     spacing: (factor: number) => `${factor * 8}px`,
   };
   
-  export default theme;
+  export type ThemeType = typeof theme;
   

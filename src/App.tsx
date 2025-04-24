@@ -1,11 +1,15 @@
 import { BrowserRouter } from 'react-router-dom';
-import AppRoutes from './routes'; 
+import AppRoutes from './routes';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './styles/theme';
 
 function App() {
   return (
-    <BrowserRouter> 
-      <AppRoutes /> 
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
